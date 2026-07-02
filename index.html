@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pehchana mujhy😏 aap ko kiya laga tha itny jaldy maff kr doun ge🔪itny achy say behave kiya...... at least apna gift toh lyty jaty may toh waisy bhy kissy ka ehsan nhi rakhty or ajnabi logon ka toh bilkul bhy nhi hehe</title>
+<style>
+  :root{
+    --bg-deep: #1a1025;
+    --bg-mid: #2d1b3d;
+    --glow-pink: #ff9ecb;
+    --glow-purple: #b993ff;
+    --star: #ffe3f4;
+    --text-soft: #f6e8ff;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html,body{
+    height:100%;
+    background: radial-gradient(ellipse at top, var(--bg-mid), var(--bg-deep) 70%);
+    font-family: 'Segoe UI', 'Poppins', sans-serif;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .sky{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+    z-index:0;
+  }
+  .star{
+    position:absolute;
+    background:var(--star);
+    border-radius:50%;
+    opacity:0.7;
+    animation: twinkle 3s ease-in-out infinite;
+  }
+  @keyframes twinkle{
+    0%,100%{opacity:.2; transform:scale(0.8);}
+    50%{opacity:1; transform:scale(1.2);}
+  }
+  .stage{
+    position:relative;
+    z-index:1;
+    text-align:center;
+    padding:40px;
+  }
+  #intro, #reveal{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+  }
+  #reveal{ display:none; }
+  .msg{
+    font-size:2rem;
+    color:var(--text-soft);
+    line-height:1.6;
+    text-shadow: 0 0 18px rgba(185,147,255,0.5);
+    animation: floatIn 1s ease both;
+  }
+  @keyframes floatIn{
+    from{opacity:0; transform:translateY(18px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+  button{
+    padding:22px 60px;
+    font-size:1.4rem;
+    border:none;
+    border-radius:50px;
+    background: linear-gradient(135deg, var(--glow-pink), var(--glow-purple));
+    color:#2d1b3d;
+    font-weight:700;
+    cursor:pointer;
+    box-shadow: 0 0 30px rgba(255,158,203,0.6);
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  button:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 45px rgba(255,158,203,0.85);
+  }
+  .name-reveal{
+    font-size:3.5rem;
+    font-weight:800;
+    color:#fff0fa;
+    text-shadow: 0 0 30px var(--glow-pink), 0 0 60px var(--glow-purple);
+    animation: popIn 0.6s ease both;
+  }
+  @keyframes popIn{
+    from{opacity:0; transform:scale(0.5);}
+    to{opacity:1; transform:scale(1);}
+  }
+  .sparkle{
+    position:absolute;
+    font-size:1.2rem;
+    animation: sparkleFloat 4s linear infinite;
+    opacity:0.8;
+  }
+  @keyframes sparkleFloat{
+    0%{ transform:translateY(0) rotate(0deg); opacity:0;}
+    10%{opacity:1;}
+    100%{ transform:translateY(-140px) rotate(180deg); opacity:0;}
+  }
+</style>
+</head>
+<body>
+
+<div class="sky" id="sky"></div>
+
+<div class="stage">
+
+  <div id="intro">
+    <div class="msg">Pehchana mujhy😏 aap ko kiya laga tha itny jaldy maff kr doun ge🔪itny achy say behave kiya...... 💀at least apna gift toh lyty jaty may toh waisy bhy kissy ka ehsan nhi rakhty or ajnabi logon ka toh bilkul bhy nhi hehe💀</div>
+    <button onclick="revealSurprise()">Click karo 🔪💀</button>
+  </div>
+
+  <div id="reveal">
+    <div class="name-reveal">FUCK U🖕🏻</div>
+    <div class="name-reveal">NOW enjoy🖕🏻aaj k bad mat bholna aak girl say bat kaisy ke jaty hea vo bhy aisy jo respect dy.....waisy aap jaisy logun ko ras bhy nhi hoty....btw thnx bolna mat bhulna at least meany itny mehnat ke he just aak word bolny k ly💀</div>
+  </div>
+
+</div>
+
+<script>
+const sky = document.getElementById('sky');
+for(let i=0;i<60;i++){
+  const s = document.createElement('div');
+  s.className='star';
+  const size = Math.random()*3+1;
+  s.style.width = size+'px';
+  s.style.height = size+'px';
+  s.style.top = Math.random()*100+'%';
+  s.style.left = Math.random()*100+'%';
+  s.style.animationDelay = Math.random()*3+'s';
+  sky.appendChild(s);
+}
+
+function revealSurprise(){
+  document.getElementById('intro').style.display='none';
+  document.getElementById('reveal').style.display='flex';
+
+  for(let i=0;i<18;i++){
+    const sp = document.createElement('div');
+    sp.className='sparkle';
+    sp.textContent = ['💀','🔪','🔪','💀','🔪','🔪','💀','🔪','🔪','💀','🔪','🔪','💀','🔪','🔪','💀','🔪','🔪','💀','🔪','🔪','💀','🔪','🔪','💀','🔪','🔪','💀','🔪','🔪','💀','🔪','🔪','💀','🔪','🔪','💀'][Math.floor(Math.random()*4)];
+    sp.style.left = (35+Math.random()*30)+'%';
+    sp.style.bottom = '30%';
+    sp.style.animationDelay = (Math.random()*1.5)+'s';
+    document.body.appendChild(sp);
+    setTimeout(()=>sp.remove(), 4200);
+  }
+}
+</script>
+
+</body>
+</html>
